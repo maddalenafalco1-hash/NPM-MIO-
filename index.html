@@ -4,20 +4,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESERCIZIO NPM</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 
 
-    <h2 class="text-center">Ciao!</h2>
+   <div class="container text-center mt-5">
+        
+        <h2 class="mb-4">Spinner Musicale</h2>
+
+        
+        <div id="spinnerBox" class="spinner-container mx-auto mb-4">
+
+            <img src="musica.jpeg" alt="Spinner Immagine">
+
+        </div>
+
+        
+        <audio id="audioPlayer" src="kronk.mp3"></audio>
 
 
 
+        <div class="d-flex justify-content-center gap-2">
+            <button id="btnStart" class="btn btn-success">START</button>
+            <button id="btnPause" class="btn btn-warning" disabled>PAUSE</button>
+            <button id="btnStop" class="btn btn-danger" disabled>STOP</button>
+        </div>
 
+    </div>
 
 
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <script src="main.js"></script>
 </body>
 </html>
